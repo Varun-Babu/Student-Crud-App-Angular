@@ -1,0 +1,25 @@
+<div></div>
+<div mat-dialog-title>Student Form</div>
+<form [formGroup]="stuForm" (ngSubmit)="onSubmit()">
+<div mat-dialog-content>
+    <div class="field">
+        <mat-form-field appearance="outline">
+            <mat-label>Name</mat-label>
+            <input formControlName="name" type="text" matInput placeholder="Enter your name">
+            <mat-icon matSuffix>people</mat-icon>
+          </mat-form-field>
+          </div>
+          <div>
+          <mat-form-field appearance="outline">
+            <mat-label>Age</mat-label>
+            <input formControlName="age" type="number" matInput placeholder="Enter your age">
+            <mat-icon matSuffix>calendar_today</mat-icon>
+          </mat-form-field>
+    </div>
+
+</div>
+<div mat-dialog-actions class="actions">
+    <button mat-raised-button type="button" [mat-dialog-close]="false" color="warn">Cancel</button>
+    <button type="submit" mat-raised-button color="primary">{{data ? 'Update':'Save'}}</button>
+</div>
+</form>

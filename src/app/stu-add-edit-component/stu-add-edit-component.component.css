@@ -1,0 +1,14 @@
+.field{
+    margin-top: 10px;
+}
+
+mat-form-field{
+    width: 100%;
+}
+
+.actions{
+    padding: 0px 25px 10px;
+    button{
+        flex: 1;
+    }
+}
